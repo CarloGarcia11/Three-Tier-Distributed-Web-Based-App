@@ -1,0 +1,58 @@
+<web-app>
+
+   <!-- General description of your Web application -->
+   <display-name>
+     Project 3 CNT 4714 Summer 2022 
+   </display-name>
+
+   <description>
+      Project Three: Developing A Three-Tier Distributed Web-Based Application
+   </description>
+
+   <!-- Servlet definitions and mappings  -->
+
+
+               <servlet-mapping>
+                  <servlet-name>client</servlet-name>
+                  <url-pattern>/client1</url-pattern>
+               </servlet-mapping>
+
+      <servlet>
+               <servlet-name>client</servlet-name>
+               <description> A simple servlet that handles an HTTP get request. </description>
+               <servlet-class> clientUserApp</servlet-class>
+            </servlet>
+
+                     <servlet-mapping>
+                        <servlet-name>client</servlet-name>
+                        <url-pattern>/client2</url-pattern>
+                     </servlet-mapping>
+
+
+
+      <servlet>
+               <servlet-name>root</servlet-name>
+               <description> A simple servlet that handles an HTTP get request. </description>
+               <servlet-class> rootUserApp</servlet-class>
+            </servlet>
+
+                     <servlet-mapping>
+                        <servlet-name>root</servlet-name>
+                        <url-pattern>/root1</url-pattern>
+                     </servlet-mapping>
+
+       <servlet>
+               <servlet-name>entry</servlet-name>
+               <description> A simple servlet that handles an HTTP get request. </description>
+               <servlet-class>dataEntryApp</servlet-class>
+            </servlet>
+
+                     <servlet-mapping>
+                        <servlet-name>entry</servlet-name>
+                        <url-pattern>/entry1</url-pattern>
+                     </servlet-mapping>
+
+
+
+
+</web-app>

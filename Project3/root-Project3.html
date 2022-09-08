@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Root-Level</title>
+
+</head>
+
+<body>
+
+    <!--This is the top version of the application-->
+    <section style="justify-content: center; text-align: center;">
+        <h1>You are connected to the Project 3 Database.</h1>
+        <h2>A Servlet/JSP-Based Multi-Tiered Enterprise Application Using A Tomcat Container</h2>
+        <hr>
+        <p>
+            <h3>You are connected to the Project 3 Enterprise System Database as a <span style="color:red ;">Root-Level</span> user.</h3>
+            <h3>Please enter any valid SQl Query command in the box below.</h3>
+        </p>
+        <form action="/Project3/client1">
+            <textarea name="sqlCommand" id="" cols="70" rows="15"></textarea>
+            <div id="buttonsList">
+                <button type="submit">Execute Command</button>
+                <button type="button">Reset Form </button>
+                <button type="button">Clear Results</button>
+            </div>
+        </form>
+
+        <h3>All execution results will appear below this line. </h3>
+        <hr>
+    </section>
+    <h2 style="justify-content: center; text-align: center;">Results</h2>
+    <!--Below this point the SQL Table, Error Messages , Or Update Messages Should Appear-->
+
+
+
+</body>
+
+</html>
